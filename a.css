@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(158, 158, 226);
+}
+
+placeholder{
+    color: rgb(212, 210, 210);
+}
+
+.flex-container{
+    width: 100%;
+   
+}
+.flex-half{
+    width: 50%;
+    padding: 2%;
+}
+
+label, input, select, textarea{
+box-sizing: border-box;
+width: 100%;
+padding: 2%;
+margin-bottom: 1.5%;
+margin-top: 2%;
+}
+
+
+.gender-label,.checkbox1{
+    width: 10%;
+}
+
+.c-code{
+    width: 13%;
+}
+.tel{
+    width: 87%;
+}
+.c-code, .tel{
+    display: inline-block;
+}
+.text{
+    height: 17%;
+}
+
+.image{
+    box-sizing: border-box;
+width: 100%;
+padding: 1%;
+margin-bottom: 2%;
+margin-top: 2%;
+background-color: aliceblue;
+}
+
+.pass{
+    margin-bottom: 0.5%;
+}
+.btn-hide{
+    margin-top: 0%;
+    color: white;
+    background-color: blue;
+    font-size: medium;
+    margin-bottom: 2%;
+}
+.color{
+   padding: 0.2%;
+   
+}
+
+.btn-submit{
+    font-size: larger;
+    align-items: center;
+    margin-left: 45%;
+
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-half{
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .flex-half {
+      flex: 100%;
+      min-width: auto;
+    }
+}

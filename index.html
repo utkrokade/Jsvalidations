@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Full Screen Form</title>
+  <link rel="stylesheet" href="a.css">
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-half">
+      <!-- <h2>Email Form</h2> -->
+      <form id="registrationForm" onsubmit="formvalidation()">
+      <label for="email" >Email</label>
+      <input type="email" id="email" placeholder="Enter email address" onkeyup="validateEmail()" required>
+      <div id="emailValidText"></div>
+      <br>
+
+      <label for="alpha">Alpha </label>
+      <input type="text" id="alpha" placeholder="Enter alpha" onkeyup="validateAlpha()" required>
+      <div id="alphaValidText"></div>
+      <br>
+
+        <label for="gender">Gender</label><br>
+        <input class="gender-label" type="radio" id="male" name="gender" value="male" class="gender-input" required><label class="gender-label" for="male">Male</label>
+    <br>
+        
+        <input class="gender-label"type="radio" id="female" name="gender" value="female" class="gender-input" required><label class="gender-label" for="female">Female</label>
+      <br>
+      <br>
+
+      <label for="url">URL </label>
+      <input type="url" id="url" placeholder="Enter url" onkeyup="validateURL()" required>
+      <div id="urlValidText"></div>
+      <br>
+
+      <label for="textarea">Textarea</label>
+      <textarea class="text" id="textarea" rows="4" placeholder="Textarea" onkeyup="validateTextarea()"  required></textarea>
+      <div id="tareaValidText"></div>
+      <br>
+
+      <label for="image">Image</label>
+      <input class="image" type="file" id="image" accept=".jpg, .jpeg, .png" required>
+    </div>
+
+    <div class="flex-half">
+      <!-- <h2>Password Form</h2> -->
+      <label for="password">Password</label>
+      <input class="pass" type="password" id="pass" placeholder="Enter Password" onkeyup="validatePass()" required>
+      <div id="passValidText"></div>
+      <button type="hide" class="btn-hide" id="hide" onclick="PasswordVisibility()">Hide/View</button>
+      <br>
+
+      <label for="phone">Phone Number</label>
+      <br>
+      <select class="c-code" id="countryCode">
+        <option value="+1">+91</option>
+        <option value="+1">+99</option>
+        <option value="+1">+1</option>
+        <option value="+44">+44</option>
+        <!-- Add more options as needed -->
+      </select><input class="tel" type="tel" id="phone"  placeholder="Enter Phone Number" onkeyup="validatePhone()" required>
+      <div id="phoneValidText"></div>
+      <br>
+
+      <label for="birthdate">Birth Date</label>
+      <input type="date" id="birthdate" onkeyup="validateDate()" required>
+      <br>
+
+      <label for="currency">Currency</label>
+      <input type="text" id="currency"  placeholder="Enter Currency" onkeyup="validateCurrency()" required>
+      <div id="currencyValidText"></div>
+      <br>
+
+      <label for="checkbox" >Checkbox </label><br>
+      <input class="checkbox1" type="checkbox" id="checkbox" > MEAN<br>
+      <input class="checkbox1" type="checkbox" id="checkbox" > Blockchain<br>
+      <input class="checkbox1" type="checkbox" id="checkbox" > React<br>
+      <input class="checkbox1" type="checkbox" id="checkbox" > BA<br>
+      <br>
+
+      <label for="color">Color </label>
+      <input class="color" type="color" id="color"  required>
+    
+      <div class="submitbutton" >
+        <button type="submit" class="btn-submit" onsubmit="submitForm()">Submit</button>
+      </div>
+      </div>
+
+      </div>
+    </form>
+   
+
+    <!-- <label for="radio" type="radio" id="">Male</label><input type="radio" id="" name="male"> -->
+
+   
+  </div>
+
+  <script src="a.js"></script>
+
+  
+
+  
+</body>
+</html>
